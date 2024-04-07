@@ -264,6 +264,7 @@ require("lazy").setup({
 			"3rd/image.nvim", -- Optional image support in preview window: See `# Preview Mode` for more information
 		},
 	},
+	{ "akinsho/bufferline.nvim", version = "*", dependencies = "nvim-tree/nvim-web-devicons" },
 	{
 		"nvim-lualine/lualine.nvim",
 		dependencies = { "nvim-tree/nvim-web-devicons" },
@@ -909,6 +910,19 @@ require("lazy").setup({
 			task = "📌",
 			lazy = "💤 ",
 		},
+	},
+})
+
+local bufferline = require("bufferline")
+bufferline.setup({
+	options = {
+		themable = true,
+		numbers = "ordinal",
+		right_mouse_command = "",
+		diagnostics = "nvim_lsp",
+		color_icons = true,
+		show_buffer_icons = true,
+		separator_style = "slant",
 	},
 })
 
