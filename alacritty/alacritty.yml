@@ -8,9 +8,9 @@ window:
     lines: 30
   dynamic_padding: true
   decorations: full
-  decorations_theme_variant: dark
-  title: Alacritty@Garuda
-  opacity: 0.6
+  decorations_theme_variant: Dark
+  title: Alacritty@daniel
+  opacity: 0.9
   class:
     instance: Alacritty
     general: Alacritty
@@ -22,13 +22,13 @@ scrolling:
 font:
   size: 12
   normal:
-    family: FiraCode Nerd Font Mono
+    family: DroidSansM Nerd Font
   bold:
-    family:  FiraCode Nerd Font Mono
+    family:  DroidSansM Nerd Font
   italic:
-    family:  FiraCode Nerd Font Mono
+    family:  DroidSansM Nerd Font
   bold_italic:
-    family:  FiraCode Nerd Font Mono
+    family:  DroidSansM Nerd Font
     size: 12.0
 
 draw_bold_text_with_bright_colors: true
@@ -43,9 +43,7 @@ cursor:
 live_config_reload: true
 
 shell:
-  program: /usr/bin/fish
-  args:
-    - --login
+  program: /usr/bin/tmux
 
 mouse:
   hide_when_typing: true
@@ -60,7 +58,7 @@ key_bindings:
   - { key: Plus,     mods: Control,       action: IncreaseFontSize }
   - { key: Minus,    mods: Control,       action: DecreaseFontSize }
   - { key: Minus,    mods: Control,       action: DecreaseFontSize }
-
+  - { key: F11, action: ToggleFullscreen }
 colors:
   primary:
     background: '0x0a1124'
@@ -68,21 +66,3 @@ colors:
   cursor:
     text:       '0x0a1124'
     cursor:     '0xeec49a'
-  normal:
-    black:      '0x0a1124'
-    red:        '0x5F4149'
-    green:      '0xEB3247'
-    yellow:     '0xBC4349'
-    blue:       '0xF35645'
-    magenta:    '0xF6A73B'
-    cyan:       '0xFAD32F'
-    white:      '0xeec49a'
-  bright:
-    black:      '0xa6896b'
-    red:        '0x5F4149'
-    green:      '0xEB3247'
-    yellow:     '0xBC4349'
-    blue:       '0xF35645'
-    magenta:    '0xF6A73B'
-    cyan:       '0xFAD32F'
-    white:      '0xeec49a'
