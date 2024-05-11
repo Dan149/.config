@@ -265,6 +265,7 @@ require("lazy").setup({
 		},
 	},
 	{ "akinsho/bufferline.nvim", version = "*", dependencies = "nvim-tree/nvim-web-devicons" },
+	{ "lukas-reineke/virt-column.nvim", opts = {} },
 	{
 		"nvim-lualine/lualine.nvim",
 		dependencies = { "nvim-tree/nvim-web-devicons" },
@@ -933,5 +934,7 @@ require("lualine").setup({
 	},
 })
 
+vim.wo.relativenumber = true
+vim.opt.colorcolumn = "100"
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
